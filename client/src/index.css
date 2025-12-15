@@ -1,0 +1,149 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+.authWrap {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.authCard {
+  width: 420px;
+  border: 2px solid #b7b7b7;
+  padding: 24px;
+  background: #fff;
+}
+
+.authCard.wide {
+  width: 760px;
+}
+
+.authForm {
+  display: grid;
+  gap: 12px;
+}
+
+.authForm input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+
+.authForm button {
+  width: 160px;
+  padding: 10px 12px;
+  border: 1px solid #888;
+  background: #eee;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.authLinks {
+  margin-top: 12px;
+}
+
+.globalError {
+  color: #c40000;
+  margin-top: 8px;
+}
+
+.twoCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.leftCol {
+  display: grid;
+  gap: 12px;
+}
+
+.rightCol {
+  display: grid;
+  gap: 22px;
+  padding-top: 6px;
+}
+
+.fieldErr {
+  color: #c40000;
+  min-height: 18px;
+}
+
+.checkRow {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.checkRow.bad {
+  color: #c40000;
+}
